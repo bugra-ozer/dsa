@@ -34,7 +34,7 @@ class Solution:
             if node.right: get_elements(node.right, result)
             return result
 
-        if (not root1 and not root2): return -1
+        if (not root1 and not root2): return []
         if not root1: return get_elements(root2)
         if not root2: return get_elements(root1)
 
